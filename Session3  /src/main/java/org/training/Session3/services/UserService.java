@@ -15,4 +15,7 @@ public interface UserService {
     // delete a user by id
     User deleteUserById(int id);
 
+    User findByEmail(String email);
+
+    List<User> findUsersWithCharacter(Character character);
 }

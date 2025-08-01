@@ -30,4 +30,15 @@ public class UserController {
         return userService.deleteUserById(id);
     }
 
+
+//     /users/email
+    @GetMapping("/{email}")
+    public User getUserByEmail(@PathVariable String  email){
+        return userService.findByEmail(email);
+    }
+
+    @GetMapping("/{character}")
+    public List<User> findUsersWithCharacter(@PathVariable Character  character){
+        return userService.findUsersWithCharacter(character);
+    }
 }
