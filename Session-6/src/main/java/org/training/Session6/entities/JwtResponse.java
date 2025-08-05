@@ -1,0 +1,16 @@
+package org.training.Session6.entities;
+
+import lombok.*;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@ToString
+public class JwtResponse {
+
+    private String jwtToken;
+    private String username;
+
+}
